@@ -29,6 +29,7 @@ main {
 }
 label {
     display: block;
+    font-family: "Raleway", sans-serif;
 }
 input {
     box-shadow: -2px 1px 1px #b40101;
@@ -69,6 +70,9 @@ button {
     transition: 0.05s;
     border: 1px solid #ccb6b6;
     box-shadow: .5px .5px 1px #ccb6b6;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 .grid-container {
