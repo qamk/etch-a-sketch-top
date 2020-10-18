@@ -77,6 +77,8 @@ crazyPalette.addEventListener('click',setRandomColour);
 darken.addEventListener('click', function (e) {
     isDarken = !isDarken;
     let darkenStyle=e.target.style; //easier to tell when isDarken is true/false
-    if (darkenStyle.border="1px solid #00000000") {darkenStyle.border = "1px solid #b40101";}
-    else {darkenStyle.border="1px solid #00000000";}
+    if (darkenStyle.border=="1px solid #ccb6b6"||darkenStyle.border=="") {
+        darkenStyle.border = "1px solid #b40101";
+    }
+    else {darkenStyle.border="1px solid #ccb6b6";}
 });
