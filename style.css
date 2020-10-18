@@ -1,0 +1,119 @@
+body {
+    border: 1px dashed #fa4b00;
+    height: 96vh;
+    width: auto;
+    font-size: 16px;
+    background-color: #d8c0c0;
+}
+h1 {
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
+}
+p {
+    line-height: 5px;
+    font-family: "Raleway", sans-serif;
+}
+#wrapper {
+    height: 95vh;
+}
+main {
+    border-top: 1px dotted #000;
+    height: 85%;
+    padding-top: 20px;
+}
+.grid-size-container {
+    float: top;
+    width: 12em;
+    height: auto;
+    margin-left: 5em;
+}
+label {
+    display: block;
+}
+input {
+    box-shadow: -2px 1px 1px #b40101;
+    border: 1px solid #000000;
+}
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    float: left;
+    height: 75%;
+    width: 12em;
+    margin-top: 25px;
+    margin-left: 5em;
+    box-shadow: -3px 4px 4px #b40101;
+}
+
+.button-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 70%;
+    width: 60%;
+}
+button:hover {
+    border: 1px solid #c4b0b0;
+    box-shadow: 1px 1px 2px #c4b0b0;
+    transform: scale(1.1);
+}
+button {
+    border-radius: 5%;
+    background-color: #d8c0c0;
+    margin: auto;
+    padding: 15px 5px;
+    width: 90px;
+    transition: 0.05s;
+    border: 1px solid #ccb6b6;
+    box-shadow: .5px .5px 1px #ccb6b6;
+}
+
+.grid-container {
+    border: 1px solid black;
+    float: right;
+    height: 95%;
+    width: 45em;
+    margin-right: 3.5em;
+    display: grid;
+    transition: all .4s ease;
+}
+.grid-container > div {
+    border: 1px solid rgba(100,100,100,0.6);
+}
+@media (max-width: 1070px) {
+    .grid-container {
+        width: 35em;
+        height: 95%;
+    }
+}
+@media (max-width: 915px) {
+    .grid-container {
+        width: 30em;
+        height: 95%;
+    }
+}
+/*For those interested, this keeps elements centered as the window expands*/
+/*Thanks for stackexchange for info about the <meta name="viewport"...> tag as well*/
+@media (min-width: 1080px) {
+    body {
+        margin: none;
+    }
+    #wrapper {
+        margin-left:auto;
+        margin-right:auto;
+        width:1080px;
+    }
+}
+@media (min-height: 730px) {
+    body {
+        margin: none;
+    }
+    #wrapper {
+        margin-top:auto;
+        margin-bottom:auto;
+        height:730px;
+    }
+}
